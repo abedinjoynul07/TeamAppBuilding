@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var tipAmount: Double = 0.00
     private var amount: Double = 0.00
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.percentageSeekBar.progress = 20
         var progressValue = 20.0
+
         binding.percentValue.text = binding.percentageSeekBar.progress.toString()
         binding.tipCalculator.setOnClickListener {
             tipCalculate(progressValue)
@@ -45,7 +47,8 @@ class MainActivity : AppCompatActivity() {
             tipMessageShow(roundUpTipAmount)
         }
         binding.buttonPayment.setOnClickListener {
-            if (!binding.calculatedAmountText.text.equals("Tip Amount: ৳0.00")) {
+
+            if(!binding.calculatedAmountText.text.equals("Tip Amount: ৳0.00")) {
                 val intent = Intent(this, PaymentActivity::class.java)
                 intent.putExtra("totalAmount", (amount + tipAmount))
                 startActivity(intent)

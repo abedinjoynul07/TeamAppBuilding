@@ -18,5 +18,4 @@
     <string name="thankYou">Thank You Come Again!</string>
     <string name="amountWarning">Enter Amount</string>
     <string name="tip_amount">Tip Amount: %s</string>
-
 </resources>
