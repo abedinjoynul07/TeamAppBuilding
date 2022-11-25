@@ -156,10 +156,6 @@
         app:layout_constraintEnd_toStartOf="@+id/roundDown"
         app:layout_constraintStart_toEndOf="@+id/roundUp"
         app:layout_constraintTop_toTopOf="parent" />
-        app:layout_constraintBottom_toBottomOf="@+id/roundUp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/roundUp" />
     <Button
         android:id="@+id/buttonPayment"
         android:layout_width="wrap_content"
