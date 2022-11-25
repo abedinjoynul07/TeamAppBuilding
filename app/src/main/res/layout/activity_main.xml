@@ -5,9 +5,10 @@
     android:id="@+id/mainScree"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:background="#E3E3E3"
-    tools:context=".MainActivity">
+    android:background="#B6B6B6"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="5dp">
 
     <TextView
         android:id="@+id/appName"
@@ -56,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="@string/calculate"
-        app:cornerRadius="15dp"
+        app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,4 +154,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/roundUp" />
+
+    <Button
+        android:id="@+id/buttonPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="@string/payment"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
