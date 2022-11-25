@@ -57,6 +57,7 @@
         android:layout_marginTop="42dp"
         android:text="@string/calculate"
         app:cornerRadius="15dp"
+        android:fontFamily="@font/DeadBambooDemoRegular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
