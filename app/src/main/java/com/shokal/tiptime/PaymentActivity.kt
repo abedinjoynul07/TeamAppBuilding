@@ -1,6 +1,5 @@
 package com.shokal.tiptime
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -12,14 +11,11 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPaymentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.payMessage.visibility = View.INVISIBLE
         binding.totalAmount.visibility = View.INVISIBLE
         binding.accountNumberEditTextButton.visibility = View.INVISIBLE
         binding.payNowButton.visibility = View.INVISIBLE
         binding.thankYou.visibility = View.INVISIBLE
-
-
         binding.visaPayment.setOnClickListener {
             paymentOptions()
             binding.visaPayment.isClickable = false
