@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.shokal.tiptime"
-        minSdk 28
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -34,7 +34,7 @@ android {
         viewBinding = true
     }
     ndkVersion '25.1.8937393'
-    buildToolsVersion '30.0.3'
+    buildToolsVersion '33.0.0'
 }
 
 dependencies {
