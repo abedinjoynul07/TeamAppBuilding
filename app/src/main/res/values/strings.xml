@@ -14,5 +14,13 @@
     <string name="tip">Tip %</string>
     <string name="payment">Payment</string>
     <string name="paymentMethods">Payment Methods</string>
+    <string name="visapayment">visaPayment</string>
+    <string name="masterpayment">masterPayment</string>
+    <string name="bikashpayment">bikashPayment</string>
+    <string name="total_amount_to_pay">Total Amount to Pay</string>
+    <string name="account_number">Account Number</string>
+    <string name="total">Total</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="thankYou">Thank You Come Again!</string>
 
 </resources>
