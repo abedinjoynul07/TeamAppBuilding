@@ -2,31 +2,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainScree"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B6B6B6"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="5dp"
     tools:layout_editor_absoluteY="5dp">
 
-
     <TextView
-        android:id="@+id/appName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
-
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/bell"
         android:gravity="center"
         android:paddingHorizontal="5dp"
         android:text="@string/app_name"
-        android:fontFamily="@font/bell"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,140 +30,143 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="9dp"
         android:autofillHints=""
-
         android:hint="@string/total_cost_of_service"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:paddingHorizontal="5dp"
-
+        android:textColor="@color/primaryTextColor"
         android:textColorHint="#616161"
         android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appName" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/tipCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="353dp"
         android:text="@string/calculate"
-        android:fontFamily="@font/bell"
         android:textSize="24sp"
         app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roundDown" />
+        app:layout_constraintStart_toStartOf="@+id/roundUp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/calculatedAmountText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="429dp"
+        android:layout_marginEnd="20dp"
         android:paddingHorizontal="10dp"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/bell"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipCalculator" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/percentageSeekBar"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="18dp"
         app:layout_constraintEnd_toStartOf="@+id/percentValue"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/tipAmount" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/percentValue"
-        android:layout_width="25dp"
+        android:layout_width="57dp"
         android:layout_height="60dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="20dp"
         android:autofillHints=""
-        android:gravity="center"
-        android:textColor="@color/black"
         android:fontFamily="@font/bell"
-        app:layout_constraintBottom_toBottomOf="@+id/percentageSeekBar"
+        android:gravity="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/percentageSeekBar"
-        app:layout_constraintTop_toTopOf="@+id/percentageSeekBar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="83dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="11dp"
         android:gravity="center"
         android:text="@string/tip"
-        android:fontFamily="@font/bell"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/percentageSeekBar"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/percentageSeekBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/percentageSeekBar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/roundUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="262dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="42dp"
         android:clickable="true"
         android:contentDescription="@string/roundUp"
         android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@+id/tipCalculator"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/arrow_up_float" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/roundDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="73dp"
         android:clickable="true"
         android:contentDescription="@string/roundDown"
         android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/percentageSeekBar"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/arrow_down_float" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="111dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="21dp"
         android:gravity="center"
         android:text="@string/rounTip"
-
-        app:layout_constraintBottom_toBottomOf="@+id/roundUp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/roundUp" />
+        android:textColor="@color/primaryTextColor"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/roundDown"
+        app:layout_constraintStart_toEndOf="@+id/roundUp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonPayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="522dp"
         android:text="@string/payment"
-        app:cornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#283593"
+        android:textSize="30sp"
+        app:cornerRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,7 @@
 <resources>
     <string name="app_name">TipTime</string>
     <string name="total_cost_of_service">Total Cost of Service</string>
-    <string name="ok">OK (10%)</string>
-    <string name="good">Good (15%)</string>
-    <string name="amazing">Amazing (20%)</string>
     <string name="calculate">Calculate Tip</string>
-    <string name="textview">TextView</string>
-    <string name="round_the_tip">Round the Tip</string>
-    <string name="percentage">Percentage</string>
     <string name="roundUp">Round Up</string>
     <string name="roundDown">Round Down</string>
     <string name="rounTip"><![CDATA[<- Round Tip ->]]></string>
@@ -22,5 +16,7 @@
     <string name="total">Total</string>
     <string name="pay_now">Pay Now</string>
     <string name="thankYou">Thank You Come Again!</string>
+    <string name="amountWarning">Enter Amount</string>
+    <string name="tip_amount">Tip Amount: %s</string>
 
 </resources>

@@ -13,6 +13,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginBottom="34dp"
         android:text="@string/paymentMethods"
+        android:textColor="@color/primaryTextColor"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="46dp"
         android:text="@string/total_amount_to_pay"
+        android:textColor="@color/primaryTextColor"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/totalAmount"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,6 +90,8 @@
         android:hint="@string/account_number"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="#37474F"
         app:layout_constraintBottom_toTopOf="@+id/payNowButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,13 +107,14 @@
         android:layout_marginBottom="61dp"
         android:gravity="center"
         android:text="@string/total"
+        android:textColor="@color/primaryTextColor"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/accountNumberEditTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payMessage" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/payNowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -126,6 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="102dp"
         android:text="@string/thankYou"
+        android:textColor="@color/primaryTextColor"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

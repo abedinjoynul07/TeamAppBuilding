@@ -1,9 +1,9 @@
 package com.shokal.tiptime
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.shokal.tiptime.databinding.ActivityPaymentBinding
 
 class PaymentActivity : AppCompatActivity() {
@@ -12,14 +12,11 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPaymentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.payMessage.visibility = View.INVISIBLE
         binding.totalAmount.visibility = View.INVISIBLE
         binding.accountNumberEditTextButton.visibility = View.INVISIBLE
         binding.payNowButton.visibility = View.INVISIBLE
         binding.thankYou.visibility = View.INVISIBLE
-
-
         binding.visaPayment.setOnClickListener {
             paymentOptions()
             binding.visaPayment.isClickable = false
@@ -37,8 +34,7 @@ class PaymentActivity : AppCompatActivity() {
             binding.horizontalScrollView.stopNestedScroll()
 
         }
-
-        binding.payNowButton.setOnClickListener{
+        binding.payNowButton.setOnClickListener {
             binding.payMessage.visibility = View.INVISIBLE
             binding.thankYou.visibility = View.VISIBLE
             binding.totalAmount.text = ""
@@ -49,7 +45,7 @@ class PaymentActivity : AppCompatActivity() {
         }
     }
 
-    private fun paymentOptions(){
+    private fun paymentOptions() {
         val amountStr = intent.getDoubleExtra("totalAmount", 0.00)
         Log.d("Main", amountStr.toString())
         binding.totalAmount.text = amountStr.toString()

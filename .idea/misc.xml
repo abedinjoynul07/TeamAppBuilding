@@ -6,6 +6,7 @@
     </entry_points>
     <pattern value="com.shokal.tiptime.MainActivity" />
     <pattern value="com.shokal.tiptime.MainActivity" method="tipCalculate" />
+    <pattern value="com.shokal.tiptime.PaymentActivity" method="paymentOptions" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="NullableNotNullManager">
