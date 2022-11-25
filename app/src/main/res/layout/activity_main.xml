@@ -57,6 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:text="@string/calculate"
+        android:fontFamily="@font/bell"
+        android:textSize="24sp"
         app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
@@ -155,6 +157,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/roundUp" />
 
+<!--    Here is the payment part-->
+    <HorizontalScrollView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="#246EE9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculatedAmountText"
+        app:layout_constraintVertical_bias="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/visa_payment"
+                android:layout_width="90dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/visa_logo" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/master_pay"
+                android:layout_margin="10dp"
+                android:layout_width="90dp"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/master_card" />
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/bkash_pay"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/bkash_pay" />
+        </LinearLayout>
+    </HorizontalScrollView>
     <Button
         android:id="@+id/buttonPayment"
         android:layout_width="wrap_content"
