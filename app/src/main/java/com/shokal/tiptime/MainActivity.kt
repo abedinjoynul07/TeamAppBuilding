@@ -1,6 +1,7 @@
 package com.shokal.tiptime
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.SeekBar
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.percentageSeekBar.progress = 20
         var progressValue = 20.0
         binding.percentValue.text = binding.percentageSeekBar.progress.toString()
@@ -42,6 +44,10 @@ class MainActivity : AppCompatActivity() {
         binding.roundDown.setOnClickListener {
             val roundUpTipAmount = floor(tipAmount)
             tipMessageShow(roundUpTipAmount)
+        }
+        binding.buttonPayment.setOnClickListener {
+            val intent = Intent(this, PaymentActivity::class.java)
+            startActivity(intent)
         }
     }
     @SuppressLint("SetTextI18n")

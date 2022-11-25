@@ -12,5 +12,7 @@
     <string name="roundDown">Round Down</string>
     <string name="rounTip"><![CDATA[<- Round Tip ->]]></string>
     <string name="tip">Tip %</string>
+    <string name="payment">Payment</string>
+    <string name="paymentMethods">Payment Methods</string>
 
 </resources>
