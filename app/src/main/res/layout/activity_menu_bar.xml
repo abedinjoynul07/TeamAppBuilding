@@ -41,7 +41,6 @@
         android:id="@+id/scrollView2"
         android:layout_width="407dp"
         android:layout_height="170dp"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breakfastMenutext">
@@ -66,6 +65,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/breakfast1"
                     tools:ignore="DuplicateSpeakableTextCheck" />
@@ -99,6 +99,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/breakfast2" />
                 <TextView
@@ -128,6 +129,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     app:srcCompat="@drawable/breakfast3"
                     android:contentDescription="@string/break_fast" />
                 <TextView
@@ -148,7 +150,7 @@
 
 
 
-        </LinearLayout>
+    </LinearLayout>
     </HorizontalScrollView>
 
     <HorizontalScrollView
@@ -156,7 +158,7 @@
         android:layout_width="409dp"
         android:layout_height="189dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lunchMenutext">
 
@@ -177,7 +179,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
-                    android:layout_marginStart="20dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/lunch1" />
                 <TextView
@@ -208,6 +210,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/lunch2" />
                 <TextView
@@ -237,6 +240,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/lunch3" />
                 <TextView
@@ -289,6 +293,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/dinner1" />
 
@@ -323,6 +328,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/dinner2" />
 
@@ -356,6 +362,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/visapayment"
                     app:srcCompat="@drawable/lunch3" />
 

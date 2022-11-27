@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val amountStr = intent.getDoubleExtra("totalAmount", 0.00).toString()
+        binding.tipAmount.setText(amountStr)
         binding.percentageSeekBar.progress = 20
         var progressValue = 20.0
 
