@@ -26,13 +26,11 @@ class PaymentActivity : AppCompatActivity() {
             paymentOptions()
             binding.masterPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
-
         }
         binding.bkashPay.setOnClickListener {
             paymentOptions()
             binding.bkashPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
-
         }
 
         binding.payNowButton.setOnClickListener{
