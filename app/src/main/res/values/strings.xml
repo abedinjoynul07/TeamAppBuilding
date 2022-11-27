@@ -19,4 +19,5 @@
     <string name="amountWarning">Enter Amount</string>
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="color">@color/</string>
+    <string name="noTipAmount">Tip Amount: ৳0.0</string>
 </resources>
