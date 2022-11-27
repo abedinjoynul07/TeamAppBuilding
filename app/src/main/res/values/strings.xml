@@ -40,4 +40,5 @@
     <string name="set_menu_2">Set Menu 2</string>
     <string name="_320_taka">320</string>
     <string name="set_menu_3">Set Menu 3</string>
+    <string name="noTipAmount">Tip Amount: ৳0.0</string>
 </resources>

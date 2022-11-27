@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         val amountText = binding.tipAmount.text.toString()
         if (amountText == "") {
             binding.tipAmount.error = getString(R.string.amountWarning)
-            binding.calculatedAmountText.text = ("Tip Amount: ৳0.00")
+            binding.calculatedAmountText.text = getString(R.string.noTipAmount)
         } else {
             amount = amountText.toDouble()
             tipAmount = ((amount * (progressValue / 100)) * 100.0).roundToInt() / 100.0
