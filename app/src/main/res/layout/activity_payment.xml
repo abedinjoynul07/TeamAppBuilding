@@ -10,10 +10,10 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginTop="10dp"
         android:text="@string/paymentMethods"
-        android:textSize="30sp"
+        android:textSize="35sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,10 +21,10 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="133dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="57dp"
-        android:background="#246EE9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+
         app:layout_constraintBottom_toTopOf="@+id/payMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,37 +32,87 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp">
 
-            <ImageView
-                android:id="@+id/visaPayment"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:contentDescription="@string/visapayment"
-                app:srcCompat="@drawable/visa_logo" />
-
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/masterPay"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:clickable="true"
-                android:contentDescription="@string/masterpayment"
-                app:srcCompat="@drawable/master_card" />
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
 
-            <ImageView
-                android:id="@+id/bkashPay"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
+                <ImageView
+                    android:id="@+id/master"
+                    android:layout_width="250dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/master_card" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/visaPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:clickable="true"
-                android:contentDescription="@string/bikashpayment"
-                app:srcCompat="@drawable/bkash_pay" />
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/Visa"
+                    android:layout_width="250dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/visa_logo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bkashPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:id="@+id/bkash"
+                    android:layout_width="250dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/bkash_pay" />
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -70,9 +120,8 @@
         android:id="@+id/payMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="46dp"
         android:text="@string/total_amount_to_pay"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/totalAmount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,8 +136,7 @@
         android:ems="10"
         android:hint="@string/account_number"
         android:inputType="number"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
+        android:minHeight="55dp"
         app:layout_constraintBottom_toTopOf="@+id/payNowButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,10 +149,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/total"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/accountNumberEditTextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +165,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="14dp"
         android:text="@string/pay_now"
-        android:textColor="#263238"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="25dp"
         app:layout_constraintBottom_toTopOf="@+id/thankYou"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +176,7 @@
         android:id="@+id/thankYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="102dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/thankYou"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
