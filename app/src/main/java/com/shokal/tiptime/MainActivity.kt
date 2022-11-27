@@ -47,8 +47,7 @@ class MainActivity : AppCompatActivity() {
             tipMessageShow(roundUpTipAmount)
         }
         binding.buttonPayment.setOnClickListener {
-
-            if(!binding.calculatedAmountText.text.equals("Tip Amount: ৳0.00")) {
+            if(tipAmount > 0.00) {
                 val intent = Intent(this, PaymentActivity::class.java)
                 intent.putExtra("totalAmount", (amount + tipAmount))
                 startActivity(intent)
