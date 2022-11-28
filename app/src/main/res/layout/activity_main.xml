@@ -19,7 +19,7 @@
         android:gravity="center"
         android:paddingHorizontal="5dp"
         android:text="@string/app_name"
-        android:textColor="@color/primaryTextColor"
+        android:textColor="@color/nightPrimaryTextColor"
         android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,7 @@
     <color name="nightPrimaryDarkColor">#836fa9</color>
     <color name="nightSecondaryColor">#90caf9</color>
     <color name="nightSecondaryDarkColor">#5d99c6</color>
-    <color name="nightPrimaryTextColor">#000000</color>
+    <color name="nightPrimaryTextColor">#FFFFFF</color>
     <color name="nightSecondaryTextColor">#000000</color>
-    <color name="darkBackground">#f1f8e9</color>
+    <color name="darkBackground">#000000</color>
 </resources>
