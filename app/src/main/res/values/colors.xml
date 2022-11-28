@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#ff8f00</color>
-    <color name="primaryDarkColor">#c56000</color>
-    <color name="secondaryColor">#0091A3</color>
-    <color name="secondaryDarkColor">#008ba3</color>
-    <color name="primaryTextColor">#37474f</color>
-    <color name="secondaryTextColor">#FFFFFF</color>
+<!--    <color name="primaryColor">#ff8f00</color>-->
+<!--    <color name="primaryDarkColor">#c56000</color>-->
+<!--    <color name="secondaryColor">#0091A3</color>-->
+<!--    <color name="secondaryDarkColor">#008ba3</color>-->
+<!--    <color name="primaryTextColor">#FFFFFF</color>-->
+<!--    <color name="secondaryTextColor">#ECD8D8</color>-->
+<!--    <color name="lightBackground">#B8B8B8</color>-->
+
+<!--    <color name="nightPrimaryColor">#b39ddb</color>-->
+<!--    <color name="nightPrimaryDarkColor">#836fa9</color>-->
+<!--    <color name="nightSecondaryColor">#90caf9</color>-->
+<!--    <color name="nightSecondaryDarkColor">#5d99c6</color>-->
+<!--    <color name="nightPrimaryTextColor">#000000</color>-->
+<!--    <color name="nightSecondaryTextColor">#000000</color>-->
+<!--    <color name="darkBackground">#000000</color>-->
+
+    <color name="primaryColor">#0277bd</color>
+    <color name="primaryLightColor">#58a5f0</color>
+    <color name="primaryDarkColor">#004c8c</color>
+    <color name="secondaryColor">#0288d1</color>
+    <color name="secondaryLightColor">#5eb8ff</color>
+    <color name="secondaryDarkColor">#005b9f</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
     <color name="lightBackground">#B8B8B8</color>
 
-    <color name="nightPrimaryColor">#b39ddb</color>
-    <color name="nightPrimaryDarkColor">#836fa9</color>
-    <color name="nightSecondaryColor">#90caf9</color>
-    <color name="nightSecondaryDarkColor">#5d99c6</color>
+    <color name="nightPrimaryColor">#81d4fa</color>
+    <color name="nightPrimaryLightColor">#b6ffff</color>
+    <color name="nightPrimaryDarkColor">#4ba3c7</color>
+    <color name="nightSecondaryColor">#b3e5fc</color>
+    <color name="nightSecondaryLightColor">#e6ffff</color>
+    <color name="nightSecondaryDarkColor">#82b3c9</color>
     <color name="nightPrimaryTextColor">#000000</color>
     <color name="nightSecondaryTextColor">#000000</color>
     <color name="darkBackground">#000000</color>
