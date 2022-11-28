@@ -16,14 +16,21 @@
 <!--    <color name="nightSecondaryTextColor">#000000</color>-->
 <!--    <color name="darkBackground">#000000</color>-->
 
-    <color name="primaryColor">#0277bd</color>
+<!--    <color name="primaryColor">#0277bd</color>-->
+<!--    <color name="primaryLightColor">#58a5f0</color>-->
+<!--    <color name="primaryDarkColor">#004c8c</color>-->
+<!--    <color name="secondaryColor">#0288d1</color>-->
+<!--    <color name="secondaryLightColor">#5eb8ff</color>-->
+<!--    <color name="secondaryDarkColor">#005b9f</color>-->
+<!--    <color name="primaryTextColor">#ffffff</color>-->
+<!--    <color name="secondaryTextColor">#000000</color>-->
+    <color name="primaryColor">#ff8f00</color>
     <color name="primaryLightColor">#58a5f0</color>
-    <color name="primaryDarkColor">#004c8c</color>
-    <color name="secondaryColor">#0288d1</color>
-    <color name="secondaryLightColor">#5eb8ff</color>
-    <color name="secondaryDarkColor">#005b9f</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#000000</color>
+    <color name="primaryDarkColor">#c56000</color>
+    <color name="secondaryColor">#0091A3</color>
+    <color name="secondaryDarkColor">#008ba3</color>
+    <color name="primaryTextColor">#D2EEFB</color>
+    <color name="secondaryTextColor">#FFFFFF</color>
     <color name="lightBackground">#B8B8B8</color>
 
     <color name="nightPrimaryColor">#81d4fa</color>
