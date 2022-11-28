@@ -1,9 +1,7 @@
 package com.shokal.tiptime.models
 
-class OrderInfo( foodName: String, foodPrice: Double): Food(){
+class OrderInfo(override val foodName: String, override val foodPrice: Double): Food(){
 
-    override val foodName: String=foodName
-    override val foodPrice: Double = foodPrice
     var persons: Int =1
     fun personUp(): Boolean{
         if (persons>0){
