@@ -31,6 +31,19 @@ class PaymentActivity : AppCompatActivity() {
             paymentOptions()
             binding.bkashPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
+            binding.nestedScrollView.stopNestedScroll()
+        }
+        binding.rocketPay.setOnClickListener {
+            paymentOptions()
+            binding.rocketPay.isClickable = false
+            binding.horizontalScrollView.stopNestedScroll()
+            binding.nestedScrollView.stopNestedScroll()
+        }
+        binding.nagadPay.setOnClickListener {
+            paymentOptions()
+            binding.nagadPay.isClickable = false
+            binding.horizontalScrollView.stopNestedScroll()
+            binding.nestedScrollView.stopNestedScroll()
         }
 
         binding.payNowButton.setOnClickListener{
