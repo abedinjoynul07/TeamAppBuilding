@@ -4,18 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
 import android.widget.Toast
-import com.shokal.tiptime.databinding.ActivityMainBinding
 import com.shokal.tiptime.databinding.ActivityMenuBinding
-import com.shokal.tiptime.databinding.ActivityPaymentBinding
 import com.shokal.tiptime.models.OrderInfo
-import kotlin.properties.Delegates
 
 class MenuActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMenuBinding
     private lateinit var unitPriceStr : String
-    public lateinit var foodName : String
+    private lateinit var foodName : String
     private lateinit var orderInfo: OrderInfo
     private var totalAmount: Double = 0.0
     var unitPrice: Double = 0.0
@@ -88,7 +84,7 @@ class MenuActivity : AppCompatActivity() {
             setAmount()
         }
         binding.personUp.setOnClickListener{
-            var numberPerson = binding.numberPerson.text.toString().toIntOrNull()
+            val numberPerson = binding.numberPerson.text.toString().toIntOrNull()
             Log.d("Main", numberPerson.toString())
             if(numberPerson==null){
                 Toast.makeText(this, "Please Select an Item", Toast.LENGTH_SHORT).show()
@@ -100,7 +96,7 @@ class MenuActivity : AppCompatActivity() {
             }
         }
         binding.personDown.setOnClickListener{
-            var numberPerson = (binding.numberPerson.text.toString()).toIntOrNull()
+            val numberPerson = (binding.numberPerson.text.toString()).toIntOrNull()
             if(numberPerson==null){
                 Toast.makeText(this, "Please Select an Item", Toast.LENGTH_SHORT).show()
 
@@ -121,7 +117,7 @@ class MenuActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                Toast.makeText(this, "You can not continue without puchase", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "You can not continue without purchase", Toast.LENGTH_SHORT).show()
             }
         }
 
