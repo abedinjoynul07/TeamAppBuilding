@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val amountStr = intent.getDoubleExtra("totalAmount", 0.00).toString()
+        binding.tipAmount.setText(amountStr)
         binding.percentageSeekBar.progress = 20
         var progressValue = 20.0
 
@@ -64,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         val amountText = binding.tipAmount.text.toString()
         if (amountText == "") {
             binding.tipAmount.error = getString(R.string.amountWarning)
-            binding.calculatedAmountText.text = ("Tip Amount: ৳0.00")
+            binding.calculatedAmountText.text = getString(R.string.noTipAmount)
         } else {
             amount = amountText.toDouble()
             tipAmount = ((amount * (progressValue / 100)) * 100.0).roundToInt() / 100.0

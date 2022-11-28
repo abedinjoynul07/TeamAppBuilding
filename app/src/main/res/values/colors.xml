@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#f57f17</color>
-    <color name="primaryDarkColor">#bc5100</color>
-    <color name="secondaryColor">#ffa000</color>
-    <color name="secondaryDarkColor">#c67100</color>
-    <color name="primaryTextColor">#000000</color>
+    <color name="primaryColor">#ff8f00</color>
+    <color name="primaryDarkColor">#c56000</color>
+    <color name="secondaryColor">#0091A3</color>
+    <color name="secondaryDarkColor">#008ba3</color>
+    <color name="primaryTextColor">#37474f</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="lightBackground">#B8B8B8</color>
 
-    <color name="nightPrimaryColor">#C1A6F3</color>
-    <color name="nightPrimaryDarkColor">#DCCBFD</color>
-    <color name="nightSecondaryColor">#7CC4FF</color>
-    <color name="nightSecondaryDarkColor">#B6DEFF</color>
-    <color name="nightPrimaryTextColor">#FFFFFF</color>
+    <color name="nightPrimaryColor">#b39ddb</color>
+    <color name="nightPrimaryDarkColor">#836fa9</color>
+    <color name="nightSecondaryColor">#90caf9</color>
+    <color name="nightSecondaryDarkColor">#5d99c6</color>
+    <color name="nightPrimaryTextColor">#000000</color>
     <color name="nightSecondaryTextColor">#000000</color>
-    <color name="darkBackground">#2B2B2B</color>
+    <color name="darkBackground">#f1f8e9</color>
 </resources>
