@@ -24,14 +24,14 @@
 <!--    <color name="secondaryDarkColor">#005b9f</color>-->
 <!--    <color name="primaryTextColor">#ffffff</color>-->
 <!--    <color name="secondaryTextColor">#000000</color>-->
-    <color name="primaryColor">#ff8f00</color>
+    <color name="primaryColor">#935200</color>
     <color name="primaryLightColor">#58a5f0</color>
     <color name="primaryDarkColor">#c56000</color>
     <color name="secondaryColor">#0091A3</color>
     <color name="secondaryDarkColor">#008ba3</color>
-    <color name="primaryTextColor">#D2EEFB</color>
+    <color name="primaryTextColor">#FFFFFF</color>
     <color name="secondaryTextColor">#FFFFFF</color>
-    <color name="lightBackground">#B8B8B8</color>
+    <color name="lightBackground">#7E7D7D</color>
 
     <color name="nightPrimaryColor">#81d4fa</color>
     <color name="nightPrimaryLightColor">#b6ffff</color>
