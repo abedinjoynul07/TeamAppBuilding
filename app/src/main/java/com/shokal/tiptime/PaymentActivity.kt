@@ -44,6 +44,7 @@ class PaymentActivity : AppCompatActivity() {
         }
     }
 
+    //payment method visibility on function
     private fun paymentOptions(){
         val amountStr = intent.getDoubleExtra("totalAmount", 0.00)
         Log.d("Main", amountStr.toString())
