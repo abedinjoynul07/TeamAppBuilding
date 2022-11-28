@@ -13,7 +13,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_margin="20dp"
-        android:textSize="25sp"
+        android:textSize="50sp"
         android:layout_marginEnd="20dp"
         android:text="@string/breakfast_items"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lunch_menu"
-        android:textSize="25sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dinner_menu"
-        android:textSize="25sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
@@ -78,12 +78,14 @@
                     android:id="@+id/breakfastInfo1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/breakfast_1" />
 
                 <TextView
                     android:id="@+id/breakfastPrice1"
                     android:layout_width="wrap_content"
+                    android:textSize="35sp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/_80" />
@@ -113,12 +115,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textSize="35sp"
                     android:text="@string/breakfast_2" />
 
                 <TextView
                     android:id="@+id/breakfastPrice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_100" />
 
@@ -145,11 +149,13 @@
                     android:id="@+id/breakfastInfo3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/breakfast_3" />
 
                 <TextView
                     android:id="@+id/breakfastPrice3"
+                    android:textSize="35sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -196,6 +202,7 @@
                 <TextView
                     android:id="@+id/lunchinfo1"
                     android:layout_width="wrap_content"
+                    android:textSize="35sp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/meat_and_rice" />
@@ -204,6 +211,7 @@
                     android:id="@+id/lunchPrice1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_300" />
 
@@ -232,12 +240,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textSize="35sp"
                     android:text="@string/kacchi_biriyani" />
 
                 <TextView
                     android:id="@+id/lunchPrice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_350" />
 
@@ -265,12 +275,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textSize="35sp"
                     android:text="@string/chicken_biriyani" />
 
                 <TextView
                     android:id="@+id/lunchPrice3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_250" />
 
@@ -316,6 +328,7 @@
                     android:id="@+id/dinnerinfo1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/set_menu_1" />
 
@@ -323,6 +336,7 @@
                     android:id="@+id/dinnerPrice1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_280" />
 
@@ -350,6 +364,7 @@
                     android:id="@+id/dinnerInfo2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/set_menu_2" />
 
@@ -357,6 +372,7 @@
                     android:id="@+id/dinnerPrice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="35sp"
                     android:layout_gravity="center"
                     android:text="@string/_320_taka" />
 
@@ -382,6 +398,7 @@
                 <TextView
                     android:id="@+id/dinnerInfo3"
                     android:layout_width="wrap_content"
+                    android:textSize="35sp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/set_menu_3" />
@@ -389,9 +406,10 @@
                 <TextView
                     android:id="@+id/dinnerPrice3"
                     android:layout_width="wrap_content"
-                    android:layout_height="14dp"
+                    android:layout_height="22dp"
                     android:layout_gravity="center"
-                    android:text="@string/_250" />
+                    android:text="@string/_250"
+                    android:textSize="35sp" />
 
             </LinearLayout>
 
@@ -400,23 +418,26 @@
 
     </HorizontalScrollView>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/paybtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
         android:text="@string/continueText"
-        android:textColor="#263238"
+        android:textSize="35sp"
+        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
+        app:layout_constraintVertical_bias="0.428" />
 
     <TextView
         android:id="@+id/numberPerson"
         android:layout_width="44dp"
         android:layout_height="30dp"
-        android:textSize="15sp"
+        android:textSize="40sp"
         android:gravity="center"
         android:layout_marginBottom="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -429,11 +450,12 @@
         android:id="@+id/menuTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="15dp"
-        android:textSize="15sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5"
+        tools:hint="total price" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/personDown"
