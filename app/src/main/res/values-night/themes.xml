@@ -12,6 +12,7 @@
         <item name="android:windowBackground">@color/darkBackground</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:fontFamily">@font/bell</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="lightTextColor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
