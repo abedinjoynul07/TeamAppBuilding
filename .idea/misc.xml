@@ -8,7 +8,6 @@
     <pattern value="com.shokal.tiptime.MainActivity" method="tipCalculate" />
     <pattern value="com.shokal.tiptime.PaymentActivity" method="paymentOptions" />
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="androidx.annotation.Nullable" />
     <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />

@@ -17,22 +17,20 @@ class PaymentActivity : AppCompatActivity() {
         binding.accountNumberEditTextButton.visibility = View.INVISIBLE
         binding.payNowButton.visibility = View.INVISIBLE
         binding.thankYou.visibility = View.INVISIBLE
-        binding.visaPayment.setOnClickListener {
+        binding.visaPay.setOnClickListener {
             paymentOptions()
-            binding.visaPayment.isClickable = false
+            binding.visaPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
         }
         binding.masterPay.setOnClickListener {
             paymentOptions()
             binding.masterPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
-
         }
         binding.bkashPay.setOnClickListener {
             paymentOptions()
             binding.bkashPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
-
         }
 
         binding.payNowButton.setOnClickListener{
