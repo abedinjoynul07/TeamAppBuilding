@@ -2,12 +2,13 @@ package com.shokal.tiptime
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.shokal.tiptime.databinding.ActivityMenuBinding
 import com.shokal.tiptime.models.OrderInfo
 
@@ -23,6 +24,11 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //Cache Print in Debug logcat
+        val sharedPreferences: SharedPreferences = getSharedPreferences("history", MODE_PRIVATE)
+        Log.d("Main", sharedPreferences.getString("totalValue", "None").toString())
+
         binding.breakfast1.setOnClickListener{
             unitPriceStr = binding.breakfastPrice1.text.toString()
             foodName = binding.breakfastInfo1.text.toString()
