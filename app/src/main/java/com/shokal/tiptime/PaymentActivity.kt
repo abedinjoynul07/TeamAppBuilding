@@ -1,6 +1,8 @@
 package com.shokal.tiptime
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +10,7 @@ import com.shokal.tiptime.databinding.ActivityPaymentBinding
 
 class PaymentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPaymentBinding
+    @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPaymentBinding.inflate(layoutInflater)
@@ -20,41 +23,81 @@ class PaymentActivity : AppCompatActivity() {
         binding.visaPay.setOnClickListener {
             paymentOptions()
             binding.visaPay.isClickable = false
+            binding.masterPay.isClickable = false
+            binding.bkashPay.isClickable = false
+            binding.rocketPay.isClickable = false
+            binding.nagadPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
         }
         binding.masterPay.setOnClickListener {
             paymentOptions()
             binding.masterPay.isClickable = false
+            binding.visaPay.isClickable = false
+            binding.bkashPay.isClickable = false
+            binding.rocketPay.isClickable = false
+            binding.nagadPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
         }
         binding.bkashPay.setOnClickListener {
             paymentOptions()
             binding.bkashPay.isClickable = false
+            binding.masterPay.isClickable = false
+            binding.visaPay.isClickable = false
+            binding.rocketPay.isClickable = false
+            binding.nagadPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
             binding.nestedScrollView.stopNestedScroll()
         }
         binding.rocketPay.setOnClickListener {
             paymentOptions()
             binding.rocketPay.isClickable = false
+            binding.masterPay.isClickable = false
+            binding.visaPay.isClickable = false
+            binding.bkashPay.isClickable = false
+            binding.nagadPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
             binding.nestedScrollView.stopNestedScroll()
         }
         binding.nagadPay.setOnClickListener {
             paymentOptions()
             binding.nagadPay.isClickable = false
+            binding.masterPay.isClickable = false
+            binding.visaPay.isClickable = false
+            binding.bkashPay.isClickable = false
+            binding.rocketPay.isClickable = false
             binding.horizontalScrollView.stopNestedScroll()
             binding.nestedScrollView.stopNestedScroll()
         }
 
         binding.payNowButton.setOnClickListener{
-            binding.payMessage.visibility = View.INVISIBLE
-            binding.thankYou.visibility = View.VISIBLE
-            binding.totalAmount.text = ""
-            binding.accountNumberEditTextButton.text.clear()
-            binding.accountNumberEditTextButton.visibility = View.INVISIBLE
-            binding.payNowButton.visibility = View.INVISIBLE
-            binding.thankYou.visibility = View.VISIBLE
+            val dialog = LoadingAnimation(this)
+            dialog.startLoading()
+            val handler = Handler()
+            handler.postDelayed(kotlinx.coroutines.Runnable {
+                dialog.dismissLoading()
+                binding.payMessage.visibility = View.INVISIBLE
+                binding.thankYou.visibility = View.VISIBLE
+                binding.totalAmount.text = ""
+                binding.accountNumberEditTextButton.text.clear()
+                binding.accountNumberEditTextButton.visibility = View.INVISIBLE
+                binding.payNowButton.visibility = View.INVISIBLE
+                binding.thankYou.visibility = View.VISIBLE
+                binding.nagadPay.isClickable = false
+                binding.masterPay.isClickable = false
+                binding.visaPay.isClickable = false
+                binding.bkashPay.isClickable = false
+                binding.rocketPay.isClickable = false
+            },
+            5000)
         }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        finish()
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     //payment method visibility on function

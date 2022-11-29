@@ -27,14 +27,12 @@ class MainActivity : AppCompatActivity() {
         var progressValue = 20.0
 
         binding.percentValue.text = binding.percentageSeekBar.progress.toString()
-        binding.tipCalculator.setOnClickListener {
-            tipCalculate(progressValue)
-        }
         binding.percentageSeekBar.setOnSeekBarChangeListener(object :
             SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
                 binding.percentValue.text = seekBar.progress.toString()
                 progressValue = seekBar.progress.toString().toDouble()
+                tipCalculate(progressValue)
                 Log.d("Main", progressValue.toString())
             }
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
