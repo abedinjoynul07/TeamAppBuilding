@@ -42,4 +42,5 @@
     <string name="set_menu_3">Set Menu 3</string>
     <string name="noTipAmount">Tip Amount: ৳0.0</string>
     <string name="continueText">Continue</string>
+    <string name="loading">Loading..</string>
 </resources>

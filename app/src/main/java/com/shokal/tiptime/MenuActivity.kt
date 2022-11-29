@@ -1,8 +1,11 @@
 package com.shokal.tiptime
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Toast
 import com.shokal.tiptime.databinding.ActivityMenuBinding
@@ -14,7 +17,7 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var foodName : String
     private lateinit var orderInfo: OrderInfo
     private var totalAmount: Double = 0.0
-    var unitPrice: Double = 0.0
+    private var unitPrice: Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -115,6 +118,7 @@ class MenuActivity : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("totalAmount", (totalAmount))
                 startActivity(intent)
+                finish()
             }
             else{
                 Toast.makeText(this, "You can not continue without purchase", Toast.LENGTH_SHORT).show()
@@ -122,6 +126,20 @@ class MenuActivity : AppCompatActivity() {
         }
 
     }
+
+    private var doubleBackToExitPressedOnce = false
+    @Suppress("DEPRECATION")
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed()
+            return
+        }
+        this.doubleBackToExitPressedOnce = true
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show()
+        Handler(Looper.getMainLooper()).postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
+    }
+    @SuppressLint("SetTextI18n")
     fun setAmount(): Double{
         totalAmount = orderInfo.totalCost()
         binding.numberPerson.text = orderInfo.persons.toString()
