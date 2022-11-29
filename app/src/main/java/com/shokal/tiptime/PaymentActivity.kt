@@ -1,7 +1,6 @@
 package com.shokal.tiptime
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
@@ -12,7 +11,7 @@ import com.shokal.tiptime.databinding.ActivityPaymentBinding
 
 class PaymentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPaymentBinding
-
+    //private val amounts: MutableSet<String> = mutableSetOf()
 
     @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -74,35 +73,39 @@ class PaymentActivity : AppCompatActivity() {
             binding.nestedScrollView.stopNestedScroll()
         }
 
-        binding.payNowButton.setOnClickListener{
-            if(binding.accountNumberEditTextButton.text.toString() != ""){
+        binding.payNowButton.setOnClickListener {
+            if (binding.accountNumberEditTextButton.text.toString() != "") {
 
-                val sharedPreferences: SharedPreferences = getSharedPreferences("history", MODE_PRIVATE)
-                val editor = sharedPreferences.edit()
-                editor.putString("totalValue", intent.getDoubleExtra("totalAmount", 0.00).toString())
-                editor.apply()
-
+//                amounts.add(intent.getDoubleExtra("totalAmount", 0.00).toString())
+//                val sharedPreferences: SharedPreferences = getSharedPreferences("history", MODE_PRIVATE)
+//                val editor = sharedPreferences.edit()
+//                val gson = Gson()
+//                val json = gson.toJson(amounts)
+//                editor.putString("totalAmounts", json)
+//                editor.apply()
                 val dialog = LoadingAnimation(this)
                 dialog.startLoading()
                 val handler = Handler()
-                handler.postDelayed(kotlinx.coroutines.Runnable {
-                    dialog.dismissLoading()
-                    binding.payMessage.visibility = View.INVISIBLE
-                    binding.thankYou.visibility = View.VISIBLE
-                    binding.totalAmount.text = ""
-                    binding.accountNumberEditTextButton.text.clear()
-                    binding.accountNumberEditTextButton.visibility = View.INVISIBLE
-                    binding.payNowButton.visibility = View.INVISIBLE
-                    binding.thankYou.visibility = View.VISIBLE
-                    binding.nagadPay.isClickable = false
-                    binding.masterPay.isClickable = false
-                    binding.visaPay.isClickable = false
-                    binding.bkashPay.isClickable = false
-                    binding.rocketPay.isClickable = false
+                handler.postDelayed(
+                    kotlinx.coroutines.Runnable {
+                        dialog.dismissLoading()
+                        binding.payMessage.visibility = View.INVISIBLE
+                        binding.thankYou.visibility = View.VISIBLE
+                        binding.totalAmount.text = ""
+                        binding.accountNumberEditTextButton.text.clear()
+                        binding.accountNumberEditTextButton.visibility = View.INVISIBLE
+                        binding.payNowButton.visibility = View.INVISIBLE
+                        binding.thankYou.visibility = View.VISIBLE
+                        binding.nagadPay.isClickable = false
+                        binding.masterPay.isClickable = false
+                        binding.visaPay.isClickable = false
+                        binding.bkashPay.isClickable = false
+                        binding.rocketPay.isClickable = false
 
-                },
-                    5000)
-            }else{
+                    },
+                    5000
+                )
+            } else {
                 Toast.makeText(this, "Enter Account Number", Toast.LENGTH_SHORT).show()
             }
         }
@@ -111,7 +114,6 @@ class PaymentActivity : AppCompatActivity() {
             startActivity(Intent(this, MenuActivity::class.java))
         }
     }
-
 
 
     @Deprecated("Deprecated in Java")
@@ -124,7 +126,7 @@ class PaymentActivity : AppCompatActivity() {
     }
 
     //payment method visibility on function
-    private fun paymentOptions(){
+    private fun paymentOptions() {
         val amountStr = intent.getDoubleExtra("totalAmount", 0.00)
         Log.d("Main", amountStr.toString())
         binding.totalAmount.text = amountStr.toString()
