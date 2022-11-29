@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val amountStr = intent.getDoubleExtra("totalAmount", 0.00).toString()
-        binding.tipAmount.setText(amountStr)
-        binding.percentageSeekBar.progress = 20
-        var progressValue = 20.0
-
+        binding.tipAmount.text = amountStr
+        binding.percentageSeekBar.progress = 12
+        var progressValue = 12.0
+        tipCalculate(progressValue)
         binding.percentValue.text = binding.percentageSeekBar.progress.toString()
         binding.percentageSeekBar.setOnSeekBarChangeListener(object :
             SeekBar.OnSeekBarChangeListener {
