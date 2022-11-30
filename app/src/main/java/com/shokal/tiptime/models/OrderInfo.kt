@@ -1,6 +1,6 @@
 package com.shokal.tiptime.models
 
-class OrderInfo(override val foodName: String, override val foodPrice: Double): Food(){
+class OrderInfo(override val foodName: String, override val foodPrice: Double): Meal(){
 
     var persons: Int =1
     fun personUp(): Boolean{
@@ -19,7 +19,16 @@ class OrderInfo(override val foodName: String, override val foodPrice: Double): 
         }
         else {
             return false
-        }    }
+        }
+    }
+
+    fun setItem()
+    {
+        val newItem=Food()
+
+    }
+
+
     override fun totalCost(): Double {
         return persons.toDouble()*foodPrice
     }
