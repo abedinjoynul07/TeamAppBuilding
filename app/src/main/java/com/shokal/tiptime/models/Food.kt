@@ -1,19 +1,7 @@
 package com.shokal.tiptime.models
-class Food()
+open class Food()
 {
-    val foodName: String=""
-    val foodPrice: Double=0.00
+    var foodName: String=""
+    var foodPrice: Double=0.00
     var foodQuantity:Int=1
-
-    fun increaseQty()
-    {
-        foodQuantity++
-    }
-    fun decreseQty()
-    {
-        if (foodQuantity>1)
-        {
-            foodQuantity--
-        }
-    }
 }
